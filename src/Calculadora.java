@@ -76,7 +76,6 @@ public class Calculadora {
                 Double resultado2 = Math.round((Math.sqrt(numero2))*100.0)/100.0;
                 JOptionPane.showMessageDialog(null, "El resultado de la raíz cuadrada de " + numero1 + " es: " + resultado1.toString() +
                         "\nEl resultado de la raíz cuadrada de "  + numero2 + " es: " + resultado2.toString());
-
             }
         });
         potenciaButton.addActionListener(new ActionListener() {
@@ -114,6 +113,52 @@ public class Calculadora {
                 }
 
 
+            }
+        });
+        senoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Double grados1 = Double.parseDouble(textField1.getText());
+                Double grados2 = Double.parseDouble(textField2.getText());
+                Double radianes1 = Math.toRadians(grados1);
+                Double radianes2 = Math.toRadians(grados2);
+                Double resultado1 = Math.sin(radianes1);
+                Double resultado2 = Math.sin(radianes2);
+                JOptionPane.showMessageDialog(null, "El seno de " + grados1 + " grados es: " + resultado1.toString() +
+                        "\nEl seno de " + grados2 + " grados es: " + resultado2.toString());
+            }
+        });
+        cosenoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Double grados1 = Double.parseDouble(textField1.getText());
+                Double grados2 = Double.parseDouble(textField2.getText());
+                Double radianes1 = Math.toRadians(grados1);
+                Double radianes2 = Math.toRadians(grados2);
+                Double resultado1 = Math.cos(radianes1);
+                Double resultado2 = Math.cos(radianes2);
+                JOptionPane.showMessageDialog(null, "El seno de " + grados1 + " grados es: " + resultado1.toString() +
+                        "\nEl seno de " + grados2 + " grados es: " + resultado2.toString());
+            }
+        });
+        tangenteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Double grados1 = Double.parseDouble(textField1.getText());
+                Double grados2 = Double.parseDouble(textField2.getText());
+                Double radianes1 = Math.toRadians(grados1);
+                Double radianes2 = Math.toRadians(grados2);
+                Double resultado1 = Math.tan(radianes1);
+                Double resultado2 = Math.tan(radianes2);
+                JOptionPane.showMessageDialog(null, "El seno de " + grados1 + " grados es: " + resultado1.toString() +
+                        "\nEl seno de " + grados2 + " grados es: " + resultado2.toString());
+            }
+        });
+        SALIRButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(mainPanel);
+                frame.dispose();
             }
         });
     }
