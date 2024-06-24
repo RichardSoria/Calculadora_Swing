@@ -6,7 +6,7 @@
       <xy x="20" y="14" width="562" height="273"/>
     </constraints>
     <properties>
-      <preferredSize width="500" height="300"/>
+      <preferredSize width="600" height="300"/>
       <requestFocusEnabled value="true"/>
     </properties>
     <border type="none"/>
@@ -147,6 +147,28 @@
         </constraints>
         <properties>
           <text value="Divisón Exacta"/>
+        </properties>
+      </component>
+      <component id="dfec5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20" style="1"/>
+          <foreground color="-16645915"/>
+          <text value="Resultado:"/>
+        </properties>
+      </component>
+      <component id="4de77" class="javax.swing.JLabel" binding="resultadoOperacion">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20" style="1"/>
+          <foreground color="-16777216"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
         </properties>
       </component>
     </children>
